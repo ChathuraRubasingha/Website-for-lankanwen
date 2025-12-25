@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* Custom Color Palette */
+@theme {
+  --color-navy-900: #0F2854;
+  --color-navy-700: #1C4D8D;
+  --color-navy-500: #4988C4;
+  --color-navy-100: #BDE8F5;
+  --color-navy-50: #E5F5FB;
+}
+
 /* Smooth scrolling for the entire page */
 html {
   scroll-behavior: smooth;
@@ -18,4 +27,55 @@ body {
 /* Section base styles */
 section {
   scroll-margin-top: 80px;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(15, 40, 84, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-white {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(15, 40, 84, 0.1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 12px 40px rgba(15, 40, 84, 0.15);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #1C4D8D 0%, #4988C4 50%, #BDE8F5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Background patterns */
+.bg-pattern {
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(73, 136, 196, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(189, 232, 245, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(28, 77, 141, 0.1) 0%, transparent 40%);
 }
