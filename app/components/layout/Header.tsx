@@ -17,13 +17,16 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 glass-white">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#00000060]">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center">
-            <span className="text-2xl font-bold text-navy-900">
-              Web<span className="text-navy-500">Craft</span>
+            <span className="text-2xl font-bold text-white italic">
+              ZEYON
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-500">
+                X
+              </span>
             </span>
           </a>
 
@@ -33,7 +36,7 @@ export default function Header() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-navy-700 hover:text-navy-500 transition-colors font-medium"
+                  className="text-gray-300 hover:text-cyan-400 transition-colors font-medium"
                 >
                   {link.label}
                 </a>
@@ -44,7 +47,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-navy-700"
+            className="md:hidden p-2 text-white hover:text-white/70 focus:outline-none"
             aria-label="Toggle menu"
           >
             <svg
@@ -74,14 +77,14 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-white/30">
+          <div className="md:hidden py-4 border-t border-white/10 bg-black/80 backdrop-blur-xl">
             <ul className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
                     onClick={handleNavClick}
-                    className="block text-navy-700 hover:text-navy-500 transition-colors font-medium py-2"
+                    className="block text-gray-300 hover:text-cyan-400 transition-colors font-medium py-2"
                   >
                     {link.label}
                   </a>
