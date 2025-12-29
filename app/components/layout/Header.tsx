@@ -22,11 +22,8 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center">
-            <span className="text-2xl font-bold text-white italic">
-              ZEYON
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-500">
-                X
-              </span>
+            <span className="text-2xl font-bold text-white italic tracking-tight">
+              ZEYON<span className="text-cyan-400">X</span>
             </span>
           </a>
 

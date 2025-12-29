@@ -23,8 +23,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <a href="#home" className="flex items-center mb-4">
-              <span className="text-2xl font-bold text-white italic">
-                ZEYON<span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-500">X</span>
+              <span className="text-2xl font-bold text-white italic tracking-tight">
+                ZEYON<span className="text-cyan-400">X</span>
               </span>
             </a>
             <p className="text-gray-400 max-w-md mb-6">
