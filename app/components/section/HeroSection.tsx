@@ -77,11 +77,16 @@ function HeroCarousel() {
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + carouselSlides.length) % carouselSlides.length);
+    setCurrentSlide(
+      (prev) => (prev - 1 + carouselSlides.length) % carouselSlides.length
+    );
   };
 
   return (
-    <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: "9/16", maxHeight: "500px" }}>
+    <div
+      className="relative w-full rounded-2xl overflow-hidden shadow-2xl"
+      style={{ aspectRatio: "9/16", maxHeight: "500px" }}
+    >
       {/* Slides */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -95,7 +100,9 @@ function HeroCarousel() {
           {/* Image - visible at top */}
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('${carouselSlides[currentSlide].image}')` }}
+            style={{
+              backgroundImage: `url('${carouselSlides[currentSlide].image}')`,
+            }}
           />
 
           {/* Gradient overlay - stronger at bottom for text */}
@@ -122,8 +129,18 @@ function HeroCarousel() {
         className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/40 transition-colors z-10"
         aria-label="Previous slide"
       >
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        <svg
+          className="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M15 19l-7-7 7-7"
+          />
         </svg>
       </button>
       <button
@@ -131,8 +148,18 @@ function HeroCarousel() {
         className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/40 transition-colors z-10"
         aria-label="Next slide"
       >
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        <svg
+          className="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9 5l7 7-7 7"
+          />
         </svg>
       </button>
 
@@ -204,8 +231,11 @@ function HeroSection() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
             >
-              We Build Beyond Limits{" "}
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-500">Sri Lankan Businesses</span>
+              We Build
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-500">
+                Sri Lankan Businesses
+              </span>
+              Beyond Limits
             </motion.h1>
             <motion.p
               variants={fadeInUp}
