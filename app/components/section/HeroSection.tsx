@@ -36,15 +36,15 @@ const staggerContainer = {
 // Carousel data - using local images from public/image folder
 const carouselSlides = [
   {
-    image: "/image/web1.jpg",
+    image: "/image/web4.jpg",
     title: "Modern Web Design",
   },
   {
-    image: "/image/web2.jpg",
+    image: "/image/web5.jpg",
     title: "E-Commerce Solutions",
   },
   {
-    image: "/image/web3.jpg",
+    image: "/image/web6.jpg",
     title: "Business Systems",
   },
   {
@@ -52,11 +52,11 @@ const carouselSlides = [
     title: "SEO Optimized",
   },
   {
-    image: "/image/web5.jpg",
+    image: "/image/web3.jpg",
     title: "Mobile-First Design",
   },
   {
-    image: "/image/web6.jpg",
+    image: "/image/web2.jpg",
     title: "Custom Dashboards",
   },
 ];
