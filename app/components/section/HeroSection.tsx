@@ -231,10 +231,10 @@ function HeroSection() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
             >
-              We Build
+              We Build {""}
               <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-500">
-                Sri Lankan Businesses
-              </span>
+                SriLankan Businesses
+              </span>{" "}
               Beyond Limits
             </motion.h1>
             <motion.p
